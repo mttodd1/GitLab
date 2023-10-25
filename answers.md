@@ -10,12 +10,17 @@ long as you list those resources (e.g. peers, websites, etc.)
 xanda_0000_movie_processing?
 (For this and future questions, the first 5 characters is plenty - neither
 Git nor I need the whole SHA.)
+9b2571
 
 2. What is the SHA for the last commit associated with line 9 of this file?
+b2ed39de 
 
 3. What did line 12 of this file say in commit d1d83?
+14)
 
 4. What changed between commit e474c and 82045?
+added movie function comments, 
+fixed two bugs: sorting prices by string + only getting top 4
 
 ## Predicting merges
 
@@ -37,14 +42,14 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
-
+THis will merge top_N with test branch
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
 ```
 git checkout top_ten
 git merge test
 ```
-
+This gave me a merger error due to conflicts
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
 ```
@@ -52,3 +57,4 @@ git checkout test
 git rebase top_ten
 git rebase top_N
 ```
+This requires solving conflict erros and test branch will change by mergeing the commits with top_ten and top_N
